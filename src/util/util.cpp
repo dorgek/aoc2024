@@ -51,6 +51,21 @@ namespace aoc_util
         return puzzle_input;
     }
 
+    std::vector<std::string> read_puzzle_input_string(std::string filePath) 
+    {
+        std::ifstream file(filePath);
+        std::string str;
+        std::string currentChar = "";
+        std::vector<std::string> puzzle_input;
+
+        while (std::getline(file, str))
+        {
+            puzzle_input.push_back(str);
+        }
+
+        return puzzle_input;
+    }
+
     // Todo: use pointers in the future
     std::vector<std::vector<int>> transpose(std::vector<std::vector<int>> in)
     {
