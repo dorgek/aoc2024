@@ -1,4 +1,4 @@
-#include "day06.h"
+#include "day07.h"
 #include "../util/util.h"
 #include "grid.h"
 #include "bits/stdc++.h"
@@ -93,7 +93,7 @@ namespace day07
 {
     void partOne(std::string puzzle_input_in)
     {
-long long sum = 0;
+        long long sum = 0;
 
         std::vector<std::string> puzzle_input = aoc_util::read_puzzle_input_string(puzzle_input_in);
 
@@ -134,7 +134,7 @@ long long sum = 0;
             } while (more_permutation);
         }
 
-        std::cout << "Total sum of correct equation results with 3 operations: " << sum << std::endl;
+        std::cout << "Total sum of correct equation results: " << sum << std::endl;
     }
 
     void partTwo(std::string puzzle_input_in)
